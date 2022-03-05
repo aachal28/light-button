@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Glowing Button</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<style>
+	body
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Agency FB;
+        background: #333;
+    }
+    ul
+    {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 3px solid #000;
+        border-radius: 5px;
+        padding: 20px 0;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 520px;
+        background: linear-gradient(0deg, #000000, #0c0c0c);
+    }
+    li
+    {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        margin: 15px;
+    }
+    label
+    {
+        position: relative;
+    }
+    label input
+    {
+        position: absolute;
+    }
+    .icon-box
+    {
+        width: 200px;
+        height: 60px;
+        background: #101010;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid #000;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .fa
+    {
+        font-size: 30px;
+        color: #222;
+        transition: 0.5s;
+        margin: 5px;
+    }
+    span
+    {
+        font-size: 30px;
+        color: #222;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+    input:checked ~ .icon-box
+    {
+        background: #000;
+        border: 3px solid #fff;
+        box-shadow: 0 0 10px rgba(33,156,243,0.5),
+                    0 0 20px rgba(33,156,243,0.5),
+                    0 0 30px rgba(33,156,243,0.5),
+                    inset 0 0 10px rgba(33,156,243,1);
+    }
+    input:checked ~ .icon-box .fa
+    {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(33,156,243,1),
+                     0 0 20px rgba(33,156,243,1),
+                     0 0 30px rgba(33,156,243,1);
+    }
+    input:checked ~ .icon-box span
+    {
+        color: #fff;
+        text-shadow: 0 0 10px rgba(33,156,243,1),
+                     0 0 10px rgba(33,156,243,1),
+                     0 0 30px rgba(33,156,243,1);
+    }
+</style>
+</head>
+<body>
+	
+     <label>
+                <input type="checkbox">
+                <div class="icon-box">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i><span>- Follow</span>
+                </div>
+            </label>
+       
+            
+</body>
+</html>
